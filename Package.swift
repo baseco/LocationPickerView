@@ -17,10 +17,10 @@ let package = Package(
             name: "LocationPickerView",
             path: "LocationPickerView",
             sources: ["**/*.{h,m}"],
+            publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
             ],
-            publicHeadersPath: ".",
             linkerSettings: [
                 .linkedFramework("UIKit"),
                 .linkedFramework("MapKit"),
