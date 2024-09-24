@@ -1,0 +1,31 @@
+// swift-tools-version:5.3
+import PackageDescription
+
+let package = Package(
+    name: "LocationPickerView",
+    platforms: [
+        .iOS(.v9)
+    ],
+    products: [
+        .library(
+            name: "LocationPickerView",
+            targets: ["LocationPickerView"]
+        ),
+    ],
+    targets: [
+        .target(
+            name: "LocationPickerView",
+            path: "LocationPickerView",
+            sources: ["**/*.{h,m}"],
+            cSettings: [
+                .headerSearchPath(".")
+            ],
+            publicHeadersPath: ".",
+            linkerSettings: [
+                .linkedFramework("UIKit"),
+                .linkedFramework("MapKit"),
+            ]
+        ),
+    ],
+    swiftLanguageVersions: [.v5]
+)
