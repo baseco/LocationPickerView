@@ -16,7 +16,7 @@ let package = Package(
         .target(
             name: "LocationPickerView",
             path: "LocationPickerView",
-            sources: ["**/*.{h,m}"],
+            
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
