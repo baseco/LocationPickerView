@@ -17,9 +17,9 @@ let package = Package(
             name: "LocationPickerView",
             path: "LocationPickerView",
             
-            publicHeadersPath: ".",
+            publicHeadersPath: "include",
             cSettings: [
-                .headerSearchPath(".")
+                .headerSearchPath("include/LocationPickerView")
             ],
             linkerSettings: [
                 .linkedFramework("UIKit"),
